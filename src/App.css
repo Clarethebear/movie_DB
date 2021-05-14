@@ -1,0 +1,9 @@
+body {
+    background-color: #778899;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
