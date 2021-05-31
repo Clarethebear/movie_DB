@@ -91,13 +91,13 @@ const App = () => {
 
             <h1>Favorites</h1>
 
-            <div className='movies'>
+            <>
                 <AllMovies 
                     movies={favorites} 
                     favoriteComponent={RemoveFavorites} 
                     handleFavsClick={removeFavMovie}
                 />
-            </div>
+            </>
         </div>
     )
 };

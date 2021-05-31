@@ -7,15 +7,14 @@ const AllMovies = (props) => {
     const FavoriteComponent = props.favoriteComponent;
     
     return (
-        <>
+        <div className='movies'>
             {props.movies.map((movie, idx) => ( // loop through movies 
-                <div>
+                <div className='image-container'>
                     <img // display each movie cover image
                         className='image'
                         src={movie.Poster}
                         alt='movie cover'
-                    >
-                    </img>
+                    />
                     <button
                         onClick={() => props.handleFavsClick(movie)} // add handleFavs prop to onClick func
                         className='click'
@@ -24,7 +23,7 @@ const AllMovies = (props) => {
                     </button>
                 </div>
             ))}
-        </>
+        </div>
     );
 };
 
